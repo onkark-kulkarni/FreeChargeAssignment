@@ -1,0 +1,242 @@
+# Created at 2021-12-27T22:25:26.448
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2021-12-27T22:25:29.213
+Unexpected IOException with stream: [
+
+# Created at 2021-12-27T22:25:29.214
+Unexpected IOException with stream: 1
+
+# Created at 2021-12-27T22:25:29.215
+Unexpected IOException with stream: 6
+
+# Created at 2021-12-27T22:25:29.218
+Unexpected IOException with stream: 4
+
+# Created at 2021-12-27T22:25:29.219
+Unexpected IOException with stream: 0
+
+# Created at 2021-12-27T22:25:29.220
+Unexpected IOException with stream: 6
+
+# Created at 2021-12-27T22:25:29.221
+Unexpected IOException with stream: 2
+
+# Created at 2021-12-27T22:25:29.222
+Unexpected IOException with stream: 4
+
+# Created at 2021-12-27T22:25:29.222
+Unexpected IOException with stream: 1
+
+# Created at 2021-12-27T22:25:29.223
+Unexpected IOException with stream: 2
+
+# Created at 2021-12-27T22:25:29.223
+Unexpected IOException with stream: 9
+
+# Created at 2021-12-27T22:25:29.223
+Unexpected IOException with stream: .
+
+# Created at 2021-12-27T22:25:29.223
+Unexpected IOException with stream: 2
+
+# Created at 2021-12-27T22:25:29.223
+Unexpected IOException with stream: 1
+
+# Created at 2021-12-27T22:25:29.224
+Unexpected IOException with stream: 1
+
+# Created at 2021-12-27T22:25:29.224
+Unexpected IOException with stream: ]
+
+# Created at 2021-12-27T22:25:29.224
+Unexpected IOException with stream: [
+
+# Created at 2021-12-27T22:25:29.224
+Unexpected IOException with stream: W
+
+# Created at 2021-12-27T22:25:29.225
+Unexpected IOException with stream: A
+
+# Created at 2021-12-27T22:25:29.225
+Unexpected IOException with stream: R
+
+# Created at 2021-12-27T22:25:29.225
+Unexpected IOException with stream: N
+
+# Created at 2021-12-27T22:25:29.226
+Unexpected IOException with stream: I
+
+# Created at 2021-12-27T22:25:29.226
+Unexpected IOException with stream: N
+
+# Created at 2021-12-27T22:25:29.226
+Unexpected IOException with stream: G
+
+# Created at 2021-12-27T22:25:29.226
+Unexpected IOException with stream: ]
+
+# Created at 2021-12-27T22:25:29.226
+Unexpected IOException with stream: :
+
+# Created at 2021-12-27T22:25:29.227
+Unexpected IOException with stream:  
+
+# Created at 2021-12-27T22:25:29.227
+Unexpected IOException with stream: T
+
+# Created at 2021-12-27T22:25:29.227
+Unexpected IOException with stream: i
+
+# Created at 2021-12-27T22:25:29.227
+Unexpected IOException with stream: m
+
+# Created at 2021-12-27T22:25:29.228
+Unexpected IOException with stream: e
+
+# Created at 2021-12-27T22:25:29.228
+Unexpected IOException with stream: d
+
+# Created at 2021-12-27T22:25:29.228
+Unexpected IOException with stream:  
+
+# Created at 2021-12-27T22:25:29.228
+Unexpected IOException with stream: o
+
+# Created at 2021-12-27T22:25:29.229
+Unexpected IOException with stream: u
+
+# Created at 2021-12-27T22:25:29.229
+Unexpected IOException with stream: t
+
+# Created at 2021-12-27T22:25:29.229
+Unexpected IOException with stream:  
+
+# Created at 2021-12-27T22:25:29.229
+Unexpected IOException with stream: c
+
+# Created at 2021-12-27T22:25:29.229
+Unexpected IOException with stream: o
+
+# Created at 2021-12-27T22:25:29.230
+Unexpected IOException with stream: n
+
+# Created at 2021-12-27T22:25:29.230
+Unexpected IOException with stream: n
+
+# Created at 2021-12-27T22:25:29.230
+Unexpected IOException with stream: e
+
+# Created at 2021-12-27T22:25:29.230
+Unexpected IOException with stream: c
+
+# Created at 2021-12-27T22:25:29.230
+Unexpected IOException with stream: t
+
+# Created at 2021-12-27T22:25:29.231
+Unexpected IOException with stream: i
+
+# Created at 2021-12-27T22:25:29.231
+Unexpected IOException with stream: n
+
+# Created at 2021-12-27T22:25:29.231
+Unexpected IOException with stream: g
+
+# Created at 2021-12-27T22:25:29.231
+Unexpected IOException with stream:  
+
+# Created at 2021-12-27T22:25:29.232
+Unexpected IOException with stream: t
+
+# Created at 2021-12-27T22:25:29.232
+Unexpected IOException with stream: o
+
+# Created at 2021-12-27T22:25:29.232
+Unexpected IOException with stream:  
+
+# Created at 2021-12-27T22:25:29.232
+Unexpected IOException with stream: C
+
+# Created at 2021-12-27T22:25:29.233
+Unexpected IOException with stream: h
+
+# Created at 2021-12-27T22:25:29.233
+Unexpected IOException with stream: r
+
+# Created at 2021-12-27T22:25:29.233
+Unexpected IOException with stream: o
+
+# Created at 2021-12-27T22:25:29.233
+Unexpected IOException with stream: m
+
+# Created at 2021-12-27T22:25:29.233
+Unexpected IOException with stream: e
+
+# Created at 2021-12-27T22:25:29.234
+Unexpected IOException with stream: ,
+
+# Created at 2021-12-27T22:25:29.234
+Unexpected IOException with stream:  
+
+# Created at 2021-12-27T22:25:29.234
+Unexpected IOException with stream: r
+
+# Created at 2021-12-27T22:25:29.234
+Unexpected IOException with stream: e
+
+# Created at 2021-12-27T22:25:29.234
+Unexpected IOException with stream: t
+
+# Created at 2021-12-27T22:25:29.235
+Unexpected IOException with stream: r
+
+# Created at 2021-12-27T22:25:29.235
+Unexpected IOException with stream: y
+
+# Created at 2021-12-27T22:25:29.235
+Unexpected IOException with stream: i
+
+# Created at 2021-12-27T22:25:29.235
+Unexpected IOException with stream: n
+
+# Created at 2021-12-27T22:25:29.235
+Unexpected IOException with stream: g
+
+# Created at 2021-12-27T22:25:29.236
+Unexpected IOException with stream: .
+
+# Created at 2021-12-27T22:25:29.236
+Unexpected IOException with stream: .
+
+# Created at 2021-12-27T22:25:29.236
+Unexpected IOException with stream: .
+
+# Created at 2021-12-27T22:25:29.236
+Unexpected IOException with stream: 
+
+# Created at 2021-12-27T22:25:29.236
+Unexpected IOException with stream: 
+
+
+# Created at 2021-12-27T22:25:37.420
+Unexpected IOException: 8,1,freecharge.Myntra.AutomationSuite.ShoppingTest,beforeClass(freecharge.Myntra.AutomationSuite.ShoppingTest),null,chrome not reachable\000A  (Session info: chrome=96.0.4664.110)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OVOT65E'\002C ip: '192.168.29.12'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [0a3195a91eefceb1445457dd7f3dc279\002C findElement {using=xpath\002C value=//span[text()=' Password ']}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 96.0.4664.110\002C chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46...\002C userDataDir: C:\005CUsers\005CDell\005CAppData\005CLocal...}\002C goog:chromeOptions: {debuggerAddress: localhost:49711}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:49711/devtoo...\002C se:cdpVersion: 96.0.4664.110\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 0a3195a91eefceb1445457dd7f3dc279,null,chrome not reachable\000A  (Session info: chrome=96.0.4664.110)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OVOT65E'\002C ip: '192.168.29.12'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [0a3195a91eefceb1445457dd7f3dc279\002C findElement {using=xpath\002C value=//span[text()=' Password ']}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 96.0.4664.110\002C chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46...\002C userDataDir: C:\005CUsers\005CDell\005CAppData\005CLocal...}\002C goog:chromeOptions: {debuggerAddress: localhost:49711}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:49711/devtoo...\002C se:cdpVersion: 96.0.4664.110\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 0a3195a91eefceb1445457dd7f3dc279,ShoppingTest.beforeClass:18->Config_Entry.beforeClassConfig:21 \00BB WebDriver chr...,org.openqa.selenium.WebDriverException: \000Achrome not reachable\000A  (Session info: chrome=96.0.4664.110)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OVOT65E'\002C ip: '192.168.29.12'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [0a3195a91eefceb1445457dd7f3dc279\002C findElement {using=xpath\002C value=//span[text()=' Password ']}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 96.0.4664.110\002C chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46...\002C userDataDir: C:\005CUsers\005CDell\005CAppData\005CLocal...}\002C goog:chromeOptions: {debuggerAddress: localhost:49711}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:49711/devtoo...\002C se:cdpVersion: 96.0.4664.110\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 0a3195a91eefceb1445457dd7f3dc279\000A\0009at freecharge.Myntra.AutomationSuite.ShoppingTest.beforeClass(ShoppingTest.java:18)\000A
+
+
+# Created at 2021-12-27T22:25:37.429
+Unexpected IOException: 5,1,freecharge.Myntra.AutomationSuite.ShoppingTest,verifyShopping(freecharge.Myntra.AutomationSuite.ShoppingTest),freecharge.Myntra.AutomationSuite.ShoppingTest,null,null
+
+
+# Created at 2021-12-27T22:25:37.616
+Unexpected IOException: 9,1,freecharge.Myntra.AutomationSuite.ShoppingTest,verifyShopping(freecharge.Myntra.AutomationSuite.ShoppingTest),null,chrome not reachable\000A  (Session info: chrome=96.0.4664.110)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OVOT65E'\002C ip: '192.168.29.12'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [0a3195a91eefceb1445457dd7f3dc279\002C findElement {using=xpath\002C value=//span[text()=' Password ']}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 96.0.4664.110\002C chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46...\002C userDataDir: C:\005CUsers\005CDell\005CAppData\005CLocal...}\002C goog:chromeOptions: {debuggerAddress: localhost:49711}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:49711/devtoo...\002C se:cdpVersion: 96.0.4664.110\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 0a3195a91eefceb1445457dd7f3dc279,null
+
+
+# Created at 2021-12-27T22:25:38.269
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

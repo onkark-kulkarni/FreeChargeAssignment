@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-27T21:37:10 IST" name="Suite" finished-at="2021-12-27T21:37:31 IST" duration-ms="20686">
+    <groups>
+    </groups>
+    <test started-at="2021-12-27T21:37:10 IST" name="Test" finished-at="2021-12-27T21:37:31 IST" duration-ms="20686">
+      <class name="freecharge.Myntra.AutomationSuite.Shopping">
+        <test-method is-config="true" signature="deleteExistingReport()[pri:0, instance:freecharge.Myntra.AutomationSuite.Shopping@53aac487]" started-at="2021-12-27T21:37:10 IST" name="deleteExistingReport" finished-at="2021-12-27T21:37:10 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteExistingReport -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:freecharge.Myntra.AutomationSuite.Shopping@53aac487]" started-at="2021-12-27T21:37:10 IST" name="beforeClass" finished-at="2021-12-27T21:37:19 IST" duration-ms="8267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="testNameDefault()[pri:0, instance:freecharge.Myntra.AutomationSuite.Shopping@53aac487]" started-at="2021-12-27T21:37:19 IST" name="testNameDefault" finished-at="2021-12-27T21:37:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNameDefault -->
+        <test-method signature="verifyShopping()[pri:0, instance:freecharge.Myntra.AutomationSuite.Shopping@53aac487]" started-at="2021-12-27T21:37:19 IST" name="verifyShopping" finished-at="2021-12-27T21:37:30 IST" duration-ms="11534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyShopping -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:freecharge.Myntra.AutomationSuite.Shopping@53aac487]" started-at="2021-12-27T21:37:30 IST" name="afterMethod" finished-at="2021-12-27T21:37:30 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyShopping status=SUCCESS method=Shopping.verifyShopping()[pri:0, instance:freecharge.Myntra.AutomationSuite.Shopping@53aac487] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="closeAll()[pri:0, instance:freecharge.Myntra.AutomationSuite.Shopping@53aac487]" started-at="2021-12-27T21:37:30 IST" name="closeAll" finished-at="2021-12-27T21:37:31 IST" duration-ms="635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAll -->
+      </class> <!-- freecharge.Myntra.AutomationSuite.Shopping -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
