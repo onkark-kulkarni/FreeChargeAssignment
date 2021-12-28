@@ -2,39 +2,61 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-28T11:03:05 IST" name="Suite" finished-at="2021-12-28T11:03:30 IST" duration-ms="25069">
+  <suite started-at="2021-12-28T12:21:11 IST" name="Suite" finished-at="2021-12-28T12:21:40 IST" duration-ms="28786">
     <groups>
     </groups>
-    <test started-at="2021-12-28T11:03:05 IST" name="Test" finished-at="2021-12-28T11:03:30 IST" duration-ms="25069">
+    <test started-at="2021-12-28T12:21:11 IST" name="Test" finished-at="2021-12-28T12:21:40 IST" duration-ms="28786">
       <class name="freecharge.Myntra.AutomationSuite.ShoppingTest">
-        <test-method is-config="true" signature="deleteExistingReport()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@273e7444]" started-at="2021-12-28T11:03:05 IST" name="deleteExistingReport" finished-at="2021-12-28T11:03:05 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="deleteExistingReport()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T12:21:11 IST" name="deleteExistingReport" finished-at="2021-12-28T12:21:11 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteExistingReport -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@273e7444]" started-at="2021-12-28T11:03:05 IST" name="beforeClass" finished-at="2021-12-28T11:03:13 IST" duration-ms="8748" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T12:21:11 IST" name="beforeClass" finished-at="2021-12-28T12:21:20 IST" duration-ms="9075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifyShopping()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@273e7444]" started-at="2021-12-28T11:03:13 IST" name="verifyShopping" finished-at="2021-12-28T11:03:29 IST" duration-ms="15335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyShopping -->
-        <test-method is-config="true" signature="testNameDefault()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@273e7444]" started-at="2021-12-28T11:03:13 IST" name="testNameDefault" finished-at="2021-12-28T11:03:13 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="testNameDefault()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T12:21:20 IST" name="testNameDefault" finished-at="2021-12-28T12:21:20 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNameDefault -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@273e7444]" started-at="2021-12-28T11:03:29 IST" name="afterMethod" finished-at="2021-12-28T11:03:29 IST" duration-ms="1" status="PASS">
+        <test-method signature="verifyShopping(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T12:21:20 IST" name="verifyShopping" data-provider="dataForUserAddress" finished-at="2021-12-28T12:21:39 IST" duration-ms="18376" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyShopping status=SUCCESS method=ShoppingTest.verifyShopping()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@273e7444] output={null}]]]>
+                <![CDATA[TestName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[F706,Pebbles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[411021]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyShopping -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T12:21:39 IST" name="afterMethod" finished-at="2021-12-28T12:21:39 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyShopping status=SUCCESS method=ShoppingTest.verifyShopping(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="closeAll()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@273e7444]" started-at="2021-12-28T11:03:29 IST" name="closeAll" finished-at="2021-12-28T11:03:30 IST" duration-ms="653" status="PASS">
+        <test-method is-config="true" signature="closeAll()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T12:21:39 IST" name="closeAll" finished-at="2021-12-28T12:21:40 IST" duration-ms="717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAll -->

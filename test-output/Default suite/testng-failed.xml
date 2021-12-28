@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="freecharge.Myntra.AutomationSuite.Shopping">
+      <class name="freecharge.Myntra.AutomationSuite.ShoppingTest">
         <methods>
+          <include name="getdta"/>
           <include name="testNameDefault"/>
           <include name="closeAll"/>
-          <include name="verifyShopping"/>
-          <include name="afterMethod"/>
           <include name="beforeClass"/>
+          <include name="afterMethod"/>
           <include name="deleteExistingReport"/>
         </methods>
-      </class> <!-- freecharge.Myntra.AutomationSuite.Shopping -->
+      </class> <!-- freecharge.Myntra.AutomationSuite.ShoppingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

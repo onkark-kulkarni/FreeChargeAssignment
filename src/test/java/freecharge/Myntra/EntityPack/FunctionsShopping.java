@@ -8,6 +8,8 @@ import org.testng.Assert;
 
 import com.relevantcodes.extentreports.LogStatus;
 
+import jxl.read.biff.BiffException;
+
 public class FunctionsShopping extends CommonFunctions {
 
 	public FunctionsShopping(String moduleName, String browser) {
@@ -35,7 +37,7 @@ public class FunctionsShopping extends CommonFunctions {
 
 	}
 
-	public void addItemToBagAndPlaceOrder() throws IOException {
+	public void addItemToBagAndPlaceOrder(String name, String address,String locality,String pincode) throws IOException {
 		waitForElement("shopping:FIRSTRECORD");
 		jsClickOnElement("shopping:FIRSTRECORD");
 		switchToWindow(getWindowHandle());
@@ -63,7 +65,7 @@ public class FunctionsShopping extends CommonFunctions {
 			reportEntry(LogStatus.FAIL, "Verify Bag count",
 					reportScreenShot(capture("bagCount")) + "Selected item is not added in bag");
 		}
-		addPinCode();
+		addPinCode(name,address,locality,pincode);
 		waitForElement("shopping:PLACEORDER");
 		pageRefresh();
 		scroll("shopping:PLACEORDER");
@@ -72,6 +74,14 @@ public class FunctionsShopping extends CommonFunctions {
 		  clickOnElement("commonFunctions:CONTINUEPAYMENT");
 		
 
+	}
+
+	public Object[][] addressData(String tableName) throws BiffException, IOException {
+		String xlsFilePath=System.getProperty("user.dir")+getConfigValue("ADDRESS_WORKBOOK");
+		String sheetName=getConfigValue("ADDRESS_SHEET");
+		Object[][] excelData=null;
+		excelData=excelReader(xlsFilePath, sheetName, tableName);
+		return excelData;
 	}
 
 }

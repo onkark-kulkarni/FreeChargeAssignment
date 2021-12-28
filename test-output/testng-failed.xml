@@ -10,7 +10,7 @@
       <class name="freecharge.Myntra.AutomationSuite.ShoppingTest">
         <methods>
           <include name="testNameDefault"/>
-          <include name="verifyShopping"/>
+          <include name="verifyShopping" invocation-numbers="0"/>
           <include name="closeAll"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>

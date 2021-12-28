@@ -95,16 +95,16 @@ public class CommonFunctions extends DriverFunctions {
 
 	}
 
-	public void addPinCode() throws IOException {
+	public void addPinCode(String name, String address,String locality,String pincode) throws IOException {
 		try {
 			waitForElement("commonFunctions:ENTERPINCODE");
 			jsClickOnElement("commonFunctions:ENTERPINCODE");
-			enterText("commonFunctions:PINCODE", "411021");
+			enterText("commonFunctions:PINCODE", pincode);
 			clickOnElement("commonFunctions:CHECK");
 			waitForElement("commonFunctions:DELIVERYPINCODE");
 			String pinCode = getElementText("commonFunctions:DELIVERYPINCODE");
 			try {
-				assertThat(pinCode.equals("411021"));
+				assertThat(pinCode.equals(pincode));
 				reportEntry(LogStatus.PASS, "Verify the address",
 						reportScreenShot(capture("address")) + "Address is added");
 			} catch (AssertionError e) {
@@ -118,20 +118,20 @@ public class CommonFunctions extends DriverFunctions {
 			jsClickOnElement("commonFunctions:CHANGEADDRESS");
 			waitForElement("commonFunctions:ADDNEWADD");
 			clickOnElement("commonFunctions:ADDNEWADD");
-			addAddressDetails();
+			addAddressDetails(name,address,locality);
 			
 		
 		
 
 	}
 
-	public void addAddressDetails() {
+	public void addAddressDetails(String name, String address,String locality) {
 		// TODO Auto-generated method stub
 		waitForElement("commonFunctions:CONTACTDETAILS");
-		enterText("commonFunctions:NAME", "Test");
+		enterText("commonFunctions:NAME", name);
 		enterText("commonFunctions:MOBNUMBER", mobileNumber);
-		enterText("commonFunctions:ENTADDRESS", "F203,Pebbles");
-		enterText("commonFunctions:LOCALITY", "Pune");
+		enterText("commonFunctions:ENTADDRESS", address);
+		enterText("commonFunctions:LOCALITY", locality);
 		clickOnElement("commonFunctions:ADDADDRESS");
 		
 		  

@@ -8,6 +8,11 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Properties;
 
+import jxl.Cell;
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
+
 public class Utilities {
 
 	private String path = "";
@@ -136,6 +141,32 @@ public class Utilities {
 		}
 
 		return propertyVal;
+	}
+
+	public String[][] excelReader(String xlsFilePath, String sheetName, String tableName)
+			throws BiffException, IOException {
+
+		Workbook workbook = Workbook.getWorkbook(new File(xlsFilePath));
+		Sheet sheet = workbook.getSheet(sheetName);
+		int startRow, startCol, endRow, endCol, citr_row, citr_col;
+		String[][] tableArray;
+		Cell tableStart = sheet.findCell(tableName);
+		startRow = tableStart.getRow();
+		startCol = tableStart.getColumn();
+		Cell tableEnd = sheet.findCell(tableName + "End");
+		endRow = tableEnd.getRow();
+		endCol = tableEnd.getColumn();
+		tableArray = new String[endRow - startRow - 1][endCol - startCol - 1];
+		citr_row = 0;
+		for (int itr_row = startRow + 1; itr_row < endRow; itr_row++, citr_row++) {
+			citr_col = 0;
+			for (int itr_col = startCol + 1; itr_col < endCol; itr_col++, citr_col++) {
+				tableArray[citr_row][citr_col] = sheet.getCell(itr_col, itr_row).getContents();
+
+			}
+		}
+
+		return (tableArray);
 	}
 
 }
