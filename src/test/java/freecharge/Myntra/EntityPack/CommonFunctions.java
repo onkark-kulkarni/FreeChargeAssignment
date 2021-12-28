@@ -27,18 +27,17 @@ public class CommonFunctions extends DriverFunctions {
 		password = getConfigValue("PASSWORD");
 		openAppURL(getConfigValue("URL"));
 		browserMaximize();
-		/*
-		 * waitForElement("commonFunctions:PROFILE");
-		 * clickOnElement("commonFunctions:PROFILE");
-		 * clickOnElement("commonFunctions:LOGIN");
-		 * enterText("commonFunctions:ENTERMOBNUMBER", mobileNumber);
-		 * clickOnElement("commonFunctions:CONTINUE");
-		 * clickOnElement("commonFunctions:PASSWORDLINK");
-		 * enterText("commonFunctions:PASSWORDINPUT", password);
-		 * clickOnElement("commonFunctions:EMAILLOGIN");
-		 * waitForElement("commonFunctions:PROFILE");
-		 * clickOnElement("commonFunctions:PROFILE");
-		 */
+
+		waitForElement("commonFunctions:PROFILE");
+		clickOnElement("commonFunctions:PROFILE");
+		clickOnElement("commonFunctions:LOGIN");
+		enterText("commonFunctions:ENTERMOBNUMBER", mobileNumber);
+		clickOnElement("commonFunctions:CONTINUE");
+		clickOnElement("commonFunctions:PASSWORDLINK");
+		enterText("commonFunctions:PASSWORDINPUT", password);
+		clickOnElement("commonFunctions:EMAILLOGIN");
+		waitForElement("commonFunctions:PROFILE");
+		clickOnElement("commonFunctions:PROFILE");
 
 	}
 
@@ -112,7 +111,7 @@ public class CommonFunctions extends DriverFunctions {
 				reportEntry(LogStatus.FAIL, "Verify the address",
 						reportScreenShot(capture("address")) + "Address is not added");
 			}
-		}else {
+		} else {
 			clickOnElement("commonFunctions:CHANGEADDRESS");
 			waitForElement("commonFunctions:ADDNEWADD");
 			clickOnElement("commonFunctions:ADDNEWADD");
