@@ -7,16 +7,16 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="freecharge.Myntra.AutomationSuite.Shopping">
+      <class name="freecharge.Myntra.AutomationSuite.ShoppingTest">
         <methods>
           <include name="testNameDefault"/>
-          <include name="closeAll"/>
           <include name="verifyShopping"/>
-          <include name="afterMethod"/>
+          <include name="closeAll"/>
           <include name="beforeClass"/>
+          <include name="afterMethod"/>
           <include name="deleteExistingReport"/>
         </methods>
-      </class> <!-- freecharge.Myntra.AutomationSuite.Shopping -->
+      </class> <!-- freecharge.Myntra.AutomationSuite.ShoppingTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

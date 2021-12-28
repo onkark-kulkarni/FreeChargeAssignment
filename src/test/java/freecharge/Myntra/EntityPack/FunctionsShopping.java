@@ -68,7 +68,7 @@ public class FunctionsShopping extends CommonFunctions {
 		pageRefresh();
 		scroll("shopping:PLACEORDER");
 		jsClickOnElement("shopping:PLACEORDER");
-		addAddressDetails();
+		
 
 	}
 

@@ -27,17 +27,18 @@ public class CommonFunctions extends DriverFunctions {
 		password = getConfigValue("PASSWORD");
 		openAppURL(getConfigValue("URL"));
 		browserMaximize();
-
-		waitForElement("commonFunctions:PROFILE");
-		clickOnElement("commonFunctions:PROFILE");
-		clickOnElement("commonFunctions:LOGIN");
-		enterText("commonFunctions:ENTERMOBNUMBER", mobileNumber);
-		clickOnElement("commonFunctions:CONTINUE");
-		clickOnElement("commonFunctions:PASSWORDLINK");
-		enterText("commonFunctions:PASSWORDINPUT", password);
-		clickOnElement("commonFunctions:EMAILLOGIN");
-		waitForElement("commonFunctions:PROFILE");
-		clickOnElement("commonFunctions:PROFILE");
+		/*
+		 * waitForElement("commonFunctions:PROFILE");
+		 * clickOnElement("commonFunctions:PROFILE");
+		 * clickOnElement("commonFunctions:LOGIN");
+		 * enterText("commonFunctions:ENTERMOBNUMBER", mobileNumber);
+		 * clickOnElement("commonFunctions:CONTINUE");
+		 * clickOnElement("commonFunctions:PASSWORDLINK");
+		 * enterText("commonFunctions:PASSWORDINPUT", password);
+		 * clickOnElement("commonFunctions:EMAILLOGIN");
+		 * waitForElement("commonFunctions:PROFILE");
+		 * clickOnElement("commonFunctions:PROFILE");
+		 */
 
 	}
 
@@ -96,19 +97,26 @@ public class CommonFunctions extends DriverFunctions {
 	}
 
 	public void addPinCode() throws IOException {
-		waitForElement("commonFunctions:ENTERPINCODE");
-		jsClickOnElement("commonFunctions:ENTERPINCODE");
-		enterText("commonFunctions:PINCODE", "411021");
-		clickOnElement("commonFunctions:CHECK");
-		waitForElement("commonFunctions:DELIVERYPINCODE");
-		String pinCode = getElementText("commonFunctions:DELIVERYPINCODE");
-		try {
-			assertThat(pinCode.equals("411021"));
-			reportEntry(LogStatus.PASS, "Verify the address",
-					reportScreenShot(capture("address")) + "Address is added");
-		} catch (AssertionError e) {
-			reportEntry(LogStatus.FAIL, "Verify the address",
-					reportScreenShot(capture("address")) + "Address is not added");
+		if (getElement("commonFunctions:ENTERPINCODE").isDisplayed()) {
+			waitForElement("commonFunctions:ENTERPINCODE");
+			jsClickOnElement("commonFunctions:ENTERPINCODE");
+			enterText("commonFunctions:PINCODE", "411021");
+			clickOnElement("commonFunctions:CHECK");
+			waitForElement("commonFunctions:DELIVERYPINCODE");
+			String pinCode = getElementText("commonFunctions:DELIVERYPINCODE");
+			try {
+				assertThat(pinCode.equals("411021"));
+				reportEntry(LogStatus.PASS, "Verify the address",
+						reportScreenShot(capture("address")) + "Address is added");
+			} catch (AssertionError e) {
+				reportEntry(LogStatus.FAIL, "Verify the address",
+						reportScreenShot(capture("address")) + "Address is not added");
+			}
+		}else {
+			clickOnElement("commonFunctions:CHANGEADDRESS");
+			waitForElement("commonFunctions:ADDNEWADD");
+			clickOnElement("commonFunctions:ADDNEWADD");
+			addAddressDetails();
 		}
 
 	}

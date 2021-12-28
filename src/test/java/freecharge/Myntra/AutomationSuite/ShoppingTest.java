@@ -24,6 +24,7 @@ public class ShoppingTest extends Config_Entry {
 		fnLib.verifyMyntraHomePage();
 		fnLib.selectSubCategory("Men", "Jeans");
 		fnLib.addItemToBagAndPlaceOrder();
+		fnLib.doPayment();
 		tName = "Shopping scenario is verified";
 	}
 }
