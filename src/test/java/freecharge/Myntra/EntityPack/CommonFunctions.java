@@ -96,7 +96,7 @@ public class CommonFunctions extends DriverFunctions {
 	}
 
 	public void addPinCode() throws IOException {
-		if (getElement("commonFunctions:ENTERPINCODE").isDisplayed()) {
+		try {
 			waitForElement("commonFunctions:ENTERPINCODE");
 			jsClickOnElement("commonFunctions:ENTERPINCODE");
 			enterText("commonFunctions:PINCODE", "411021");
@@ -111,12 +111,17 @@ public class CommonFunctions extends DriverFunctions {
 				reportEntry(LogStatus.FAIL, "Verify the address",
 						reportScreenShot(capture("address")) + "Address is not added");
 			}
-		} else {
-			clickOnElement("commonFunctions:CHANGEADDRESS");
+		}catch(Exception e) {
+			
+		}
+		 
+			jsClickOnElement("commonFunctions:CHANGEADDRESS");
 			waitForElement("commonFunctions:ADDNEWADD");
 			clickOnElement("commonFunctions:ADDNEWADD");
 			addAddressDetails();
-		}
+			
+		
+		
 
 	}
 
@@ -128,8 +133,9 @@ public class CommonFunctions extends DriverFunctions {
 		enterText("commonFunctions:ENTADDRESS", "F203,Pebbles");
 		enterText("commonFunctions:LOCALITY", "Pune");
 		clickOnElement("commonFunctions:ADDADDRESS");
-		waitForElement("commonFunctions:CONTINUEPAYMENT");
-		clickOnElement("commonFunctions:CONTINUEPAYMENT");
+		
+		  
+		 
 
 	}
 
