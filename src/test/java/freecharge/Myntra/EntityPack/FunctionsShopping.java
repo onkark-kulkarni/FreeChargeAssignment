@@ -72,6 +72,4 @@ public class FunctionsShopping extends CommonFunctions {
 
 	}
 
-	
-
 }

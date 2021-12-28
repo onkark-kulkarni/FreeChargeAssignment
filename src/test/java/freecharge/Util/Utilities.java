@@ -12,7 +12,6 @@ public class Utilities {
 
 	private String path = "";
 	private String ts = "";
-	private String ranString = "";
 
 	// This method will give the Current time stamp.
 	public void getCurrentTimeStamp() {
@@ -28,7 +27,7 @@ public class Utilities {
 	// This method will create new folder along with time stamp for saving the
 	// screen shot.
 	public void create_folder() {
-		path = System.getProperty("user.dir") + getConfigValue("REPORT_PATH") + "\\"+"ScreenShots" ;
+		path = System.getProperty("user.dir") + getConfigValue("REPORT_PATH") + "\\" + "ScreenShots";
 		File outputFile = new File(path);
 		outputFile.mkdir();
 	}
@@ -114,7 +113,7 @@ public class Utilities {
 	public String getPropValue(String property_Name) {
 
 		FileInputStream input;
-		String propertyVal="";
+		String propertyVal = "";
 		String property_value[] = property_Name.split(":");
 		String modName = property_value[0].trim();
 		String value = property_value[1].trim();
@@ -138,4 +137,5 @@ public class Utilities {
 
 		return propertyVal;
 	}
+
 }

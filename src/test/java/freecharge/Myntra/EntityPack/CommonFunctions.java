@@ -4,22 +4,18 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import com.relevantcodes.extentreports.LogStatus;
-import com.twilio.base.ResourceSet;
-import com.twilio.rest.api.v2010.account.Message;
 
 import freecharge.Util.DriverFunctions;
 
 public class CommonFunctions extends DriverFunctions {
 
-	public static final String ACCOUNT_SID = "ACa7b7fcde8ae79916f0d6cba709c9686c";
-	public static final String AUTH_TOKEN = "e30b6949ad40e9ff87fdf0e76ab4b5a5";
+	String mobileNumber;
+	String password;
 
 	public CommonFunctions(String moduleName, String browser) {
 		super(moduleName, browser);
@@ -27,8 +23,8 @@ public class CommonFunctions extends DriverFunctions {
 	}
 
 	public void doLogin() {
-		String mobileNumber = getConfigValue("MOBILE_NUMBER");
-		String password = getConfigValue("PASSWORD");
+		mobileNumber = getConfigValue("MOBILE_NUMBER");
+		password = getConfigValue("PASSWORD");
 		openAppURL(getConfigValue("URL"));
 		browserMaximize();
 
@@ -63,17 +59,6 @@ public class CommonFunctions extends DriverFunctions {
 
 	public void handleMyntraOTP() {
 
-	}
-
-	public static String getMessage() {
-		return getMessages().filter(m -> m.getDirection().compareTo(Message.Direction.INBOUND) == 0)
-				.filter(m -> m.getTo().equals("+13343734019")).map(Message::getBody).findFirst()
-				.orElseThrow(IllegalStateException::new);
-	}
-
-	private static Stream<Message> getMessages() {
-		ResourceSet<Message> messages = Message.reader(ACCOUNT_SID).read();
-		return StreamSupport.stream(messages.spliterator(), false);
 	}
 
 	public void selectCategoryAndSubCategoryFromHomePage(String category, String subCategory) throws IOException {
@@ -132,7 +117,7 @@ public class CommonFunctions extends DriverFunctions {
 		// TODO Auto-generated method stub
 		waitForElement("commonFunctions:CONTACTDETAILS");
 		enterText("commonFunctions:NAME", "Test");
-		enterText("commonFunctions:MOBNUMBER", "9970385535");
+		enterText("commonFunctions:MOBNUMBER", mobileNumber);
 		enterText("commonFunctions:ENTADDRESS", "F203,Pebbles");
 		enterText("commonFunctions:LOCALITY", "Pune");
 		clickOnElement("commonFunctions:ADDADDRESS");
@@ -140,10 +125,10 @@ public class CommonFunctions extends DriverFunctions {
 		clickOnElement("commonFunctions:CONTINUEPAYMENT");
 
 	}
-	
+
 	public void doPayment() throws IOException {
 		waitForElement("commonFunctions:PAYMENT");
-		String payment=getElementText("commonFunctions:PAYMENT");
+		String payment = getElementText("commonFunctions:PAYMENT");
 		try {
 			assertThat(payment.contains("Choose Payment Mode"));
 			reportEntry(LogStatus.PASS, "Verify the Payment",
