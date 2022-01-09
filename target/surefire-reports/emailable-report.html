@@ -9,39 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">12,360</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,439</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">freecharge.Myntra.AutomationSuite.ShoppingTest</td><td><a href="#m0">beforeClass</a></td><td rowspan="1">1640657954550</td><td rowspan="1">11228</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">freecharge.Myntra.AutomationSuite.ShoppingTest</td><td><a href="#m1">verifyShopping</a></td><td rowspan="1">1640657965811</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">freecharge.Myntra.AutomationSuite.ShoppingTest</td><td><a href="#m0">verifyShopping</a></td><td rowspan="1">1641727015143</td><td rowspan="1">1070</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">freecharge.Myntra.AutomationSuite.ShoppingTest#beforeClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos; Password &apos;] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-OVOT65E&apos;, ip: &apos;192.168.29.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63150}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63150/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d9237d48881d35ed06f00fc16a384cc
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at freecharge.Util.DriverFunctions.waitForElementToBeClickable(DriverFunctions.java:179)
-	at freecharge.Util.DriverFunctions.clickOnElement(DriverFunctions.java:132)
-	at freecharge.Myntra.EntityPack.CommonFunctions.doLogin(CommonFunctions.java:36)
-	at freecharge.Myntra.AutomationSuite.Config_Entry.beforeClassConfig(Config_Entry.java:21)
-	at freecharge.Myntra.AutomationSuite.ShoppingTest.beforeClass(ShoppingTest.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">freecharge.Myntra.AutomationSuite.ShoppingTest#verifyShopping</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos; Password &apos;] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-OVOT65E&apos;, ip: &apos;192.168.29.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63150}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63150/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d9237d48881d35ed06f00fc16a384cc
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at freecharge.Util.DriverFunctions.waitForElementToBeClickable(DriverFunctions.java:179)
-	at freecharge.Util.DriverFunctions.clickOnElement(DriverFunctions.java:132)
-	at freecharge.Myntra.EntityPack.CommonFunctions.doLogin(CommonFunctions.java:36)
-	at freecharge.Myntra.AutomationSuite.Config_Entry.beforeClassConfig(Config_Entry.java:21)
-	at freecharge.Myntra.AutomationSuite.ShoppingTest.beforeClass(ShoppingTest.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">freecharge.Myntra.AutomationSuite.ShoppingTest#verifyShopping</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>TestName</td><td>F706,Pebbles</td><td>Pune</td><td>411021</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

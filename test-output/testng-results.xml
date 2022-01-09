@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-28T12:21:11 IST" name="Suite" finished-at="2021-12-28T12:21:40 IST" duration-ms="28786">
+  <suite started-at="2021-12-28T21:21:39 IST" name="Suite" finished-at="2021-12-28T21:22:00 IST" duration-ms="21359">
     <groups>
     </groups>
-    <test started-at="2021-12-28T12:21:11 IST" name="Test" finished-at="2021-12-28T12:21:40 IST" duration-ms="28786">
+    <test started-at="2021-12-28T21:21:39 IST" name="Test" finished-at="2021-12-28T21:22:00 IST" duration-ms="21359">
       <class name="freecharge.Myntra.AutomationSuite.ShoppingTest">
-        <test-method is-config="true" signature="deleteExistingReport()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T12:21:11 IST" name="deleteExistingReport" finished-at="2021-12-28T12:21:11 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="deleteExistingReport()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T21:21:39 IST" name="deleteExistingReport" finished-at="2021-12-28T21:21:39 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteExistingReport -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T12:21:11 IST" name="beforeClass" finished-at="2021-12-28T12:21:20 IST" duration-ms="9075" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T21:21:39 IST" name="beforeClass" finished-at="2021-12-28T21:21:48 IST" duration-ms="9487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="testNameDefault()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T12:21:20 IST" name="testNameDefault" finished-at="2021-12-28T12:21:20 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="testNameDefault()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T21:21:48 IST" name="testNameDefault" finished-at="2021-12-28T21:21:48 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNameDefault -->
-        <test-method signature="verifyShopping(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T12:21:20 IST" name="verifyShopping" data-provider="dataForUserAddress" finished-at="2021-12-28T12:21:39 IST" duration-ms="18376" status="PASS">
+        <test-method signature="verifyShopping(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T21:21:48 IST" name="verifyShopping" data-provider="dataForUserAddress" finished-at="2021-12-28T21:21:59 IST" duration-ms="10871" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,7 +45,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyShopping -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T12:21:39 IST" name="afterMethod" finished-at="2021-12-28T12:21:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T21:21:59 IST" name="afterMethod" finished-at="2021-12-28T21:21:59 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,7 +56,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="closeAll()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T12:21:39 IST" name="closeAll" finished-at="2021-12-28T12:21:40 IST" duration-ms="717" status="PASS">
+        <test-method is-config="true" signature="closeAll()[pri:0, instance:freecharge.Myntra.AutomationSuite.ShoppingTest@1ed6388a]" started-at="2021-12-28T21:21:59 IST" name="closeAll" finished-at="2021-12-28T21:22:00 IST" duration-ms="670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAll -->
