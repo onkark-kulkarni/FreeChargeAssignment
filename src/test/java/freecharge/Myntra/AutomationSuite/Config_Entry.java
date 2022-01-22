@@ -18,7 +18,7 @@ public class Config_Entry {
 	
 	public void beforeClassConfig(CommonFunctions fnLib,String moduleName) {
 		commonLib=fnLib;
-		commonLib.doLogin();
+		//commonLib.doLogin();
 		}
 	public void reportConfig(String tTitle) {
 		commonLib.initReport(tTitle);
